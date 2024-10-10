@@ -3,23 +3,20 @@
 int pertenceFibonacci(int num) {
     int a = 0, b = 1, c = 0;
 
-    // Verificar se o número é 0 ou 1, que pertencem à sequência
     if (num == 0 || num == 1) {
-        return 1; // Pertence à sequência
+        return 1; 
     }
 
-    // Gerar a sequência de Fibonacci até que o valor seja maior ou igual ao número informado
     while (c < num) {
         c = a + b;
         a = b;
         b = c;
     }
 
-    // Verificar se o número informado é igual ao último valor calculado na sequência
     if (c == num) {
-        return 1; // Pertence à sequência
+        return 1; 
     } else {
-        return 0; // Não pertence à sequência
+        return 0; 
     }
 }
 
